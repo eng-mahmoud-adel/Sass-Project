@@ -3,7 +3,7 @@
     padding: 0 15px;
     // for extra small screens
     @media #{$maxExtraSmall} {
-        width: 539px;
+        width: 100%;
     }
     // for small screens
     @media #{$minSmall} {

@@ -36,9 +36,6 @@
             background-color: $mainColor;
             border-radius: 20px;
             padding: 0;
-            @media #{$maxExtraSmall} {
-                width: 90%;
-            }
             li {
                 color: white;
                 cursor: pointer;
