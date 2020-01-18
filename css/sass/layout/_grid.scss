@@ -1,0 +1,16 @@
+.container {
+    margin: auto;
+    padding: 0 15px;
+    @media #{$minSmall} {
+        width: 540px;
+    }
+    @media #{$minMedium} {
+        width: 720px;
+    }
+    @media #{$minLarge} {
+        width: 960px;
+    }
+    @media #{$minExtraLarge} {
+        width: 1140px;
+    }
+}
