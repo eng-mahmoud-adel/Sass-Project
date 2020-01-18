@@ -10,6 +10,11 @@
   margin: auto;
   padding: 0 15px;
 }
+@media (max-width: 575px) {
+  .container {
+    width: 539px;
+  }
+}
 @media (min-width: 576px) {
   .container {
     width: 540px;
@@ -65,6 +70,11 @@
 .header .logo {
   color: #525252;
 }
+@media (min-width: 576px) {
+  .header .logo {
+    width: 100%;
+  }
+}
 @media (min-width: 768px) {
   .header .logo {
     width: 30%;
@@ -74,6 +84,11 @@
 .header .logo h2 {
   font-size: 35px;
   margin: 0;
+}
+@media (max-width: 575px) {
+  .header .navbar {
+    display: none;
+  }
 }
 @media (min-width: 576px) {
   .header .navbar {
@@ -93,15 +108,24 @@
   background-color: #E2494C;
   border-radius: 20px;
   padding: 0;
-  width: 100%;
+}
+@media (max-width: 575px) {
+  .header .navbar ul {
+    width: 90%;
+  }
 }
 .header .navbar ul li {
   color: white;
   cursor: pointer;
 }
+@media (max-width: 575px) {
+  .header .navbar ul li {
+    padding: 10px 0 10px 20px;
+  }
+}
 @media (min-width: 576px) {
   .header .navbar ul li {
-    padding: 10px 15x;
+    padding: 10px 0 10px 20px;
   }
 }
 @media (min-width: 768px) {
@@ -136,6 +160,11 @@
   border-radius: 3px;
   cursor: pointer;
 }
+@media (max-width: 575px) {
+  .header .toggler {
+    display: block;
+  }
+}
 @media (min-width: 576px) {
   .header .toggler {
     display: block;
@@ -166,6 +195,12 @@
   padding-bottom: 30px;
   display: block;
   margin: auto;
+}
+@media (max-width: 575px) {
+  .slider q {
+    width: 75%;
+    font-size: 18px;
+  }
 }
 @media (min-width: 576px) {
   .slider q {
@@ -203,6 +238,15 @@
   padding: 40px 0;
   text-align: left;
   overflow: hidden;
+}
+@media (max-width: 575px) {
+  .service .service-box {
+    width: calc(100% / 1);
+    font-size: 18px;
+  }
+  .service .service-box:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
 }
 @media (min-width: 576px) {
   .service .service-box {
@@ -243,6 +287,17 @@
 .player {
   padding: 40px 0;
   overflow: hidden;
+}
+@media (max-width: 575px) {
+  .player .player-box {
+    width: calc(100% / 1);
+    font-size: 20px;
+    text-align: left;
+    float: left;
+  }
+  .player .player-box:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
 }
 @media (min-width: 576px) {
   .player .player-box {
@@ -285,6 +340,11 @@
 .player .player-box .player-image img {
   width: 100%;
 }
+@media (max-width: 575px) {
+  .player .player-box .player-info {
+    width: 400px;
+  }
+}
 @media (min-width: 576px) {
   .player .player-box .player-info {
     width: 300px;
@@ -320,6 +380,14 @@
 .lorem {
   padding: 40px 0;
   overflow: hidden;
+}
+@media (max-width: 575px) {
+  .lorem .lorem-image {
+    width: calc(100% / 1);
+  }
+  .lorem .lorem-image:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
 }
 @media (min-width: 576px) {
   .lorem .lorem-image {
@@ -376,6 +444,11 @@
   overflow: hidden;
   padding: 20px 0 10px;
 }
+@media (max-width: 575px) {
+  .footer .section-1 {
+    width: 100%;
+  }
+}
 @media (min-width: 576px) {
   .footer .section-1 {
     width: 100%;
@@ -409,6 +482,11 @@
   float: left;
   width: 70%;
 }
+@media (max-width: 575px) {
+  .footer .section-2 {
+    width: 100%;
+  }
+}
 @media (min-width: 576px) {
   .footer .section-2 {
     width: 50%;
@@ -439,6 +517,11 @@
 .footer .section-3 {
   padding-bottom: 25px;
 }
+@media (max-width: 575px) {
+  .footer .section-3 {
+    width: 100%;
+  }
+}
 @media (min-width: 576px) {
   .footer .section-3 {
     width: 50%;
@@ -456,17 +539,36 @@
   padding: 5px;
   outline: none;
 }
+@media (max-width: 575px) {
+  .footer .section-3 form input, .footer .section-3 form textarea {
+    display: block;
+  }
+}
 .footer .section-3 form textarea {
   resize: none;
 }
 .footer .copyright {
   border-top: 1px solid grey;
 }
-.footer .copyright .copy {
-  float: left;
+@media (max-width: 575px) {
+  .footer .copyright .copy {
+    display: block;
+  }
 }
-.footer .copyright .design {
-  float: right;
+@media (min-width: 576px) {
+  .footer .copyright .copy {
+    float: left;
+  }
+}
+@media (max-width: 575px) {
+  .footer .copyright .design {
+    display: block;
+  }
+}
+@media (min-width: 576px) {
+  .footer .copyright .design {
+    float: right;
+  }
 }
 
 /* end footer */

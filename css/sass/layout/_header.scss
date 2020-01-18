@@ -6,9 +6,12 @@
     position: relative;
     .logo {
         color: #525252;
+        @media #{$minSmall} {
+            width: 100%;
+        }
         @media #{$minMedium} {
             width: 30%;
-            float: left;
+            float: $float-left;
         }
         h2 {
             font-size: 35px;
@@ -16,6 +19,9 @@
         }
     }
     .navbar {
+        @media #{$maxExtraSmall} {
+            display: none;
+        }
         @media #{$minSmall} {
             display: none;
         }
@@ -30,12 +36,17 @@
             background-color: $mainColor;
             border-radius: 20px;
             padding: 0;
-            width: 100%;
+            @media #{$maxExtraSmall} {
+                width: 90%;
+            }
             li {
                 color: white;
                 cursor: pointer;
+                @media #{$maxExtraSmall} {
+                    padding: 10px 0 10px 20px;
+                }
                 @media #{$minSmall} {
-                    padding: 10px 15x;
+                    padding: 10px 0 10px 20px;
                 }
                 @media #{$minMedium} {
                     display: inline-block;
@@ -65,6 +76,9 @@
         right: 15px;
         border-radius: 3px;
         cursor: pointer;
+        @media #{$maxExtraSmall} {
+            display: block;
+        }
         @media #{$minSmall} {
             display: block;
         }

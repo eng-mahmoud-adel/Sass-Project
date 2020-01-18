@@ -4,6 +4,9 @@
     overflow: hidden;
     padding: 20px 0 10px;
     .section-1 {
+        @media #{$maxExtraSmall} {
+            width: 100%;
+        }
         @media #{$minSmall} {
             width: 100%;
         }
@@ -35,6 +38,9 @@
         }
     }
     .section-2 {
+        @media #{$maxExtraSmall} {
+            width: 100%;
+        }
         @media #{$minSmall} {
             width: 50%;
             float: $float-left;
@@ -60,6 +66,9 @@
         }
     }
     .section-3 {
+        @media #{$maxExtraSmall} {
+            width: 100%;
+        }
         @media #{$minSmall} {
             width: 50%;
             float: $float-left;
@@ -70,6 +79,9 @@
         padding-bottom: 25px;
         form {
             input, textarea {
+                @media #{$maxExtraSmall} {
+                    display: block;
+                }
                 margin-bottom: 5px;
                 border-radius: 10px;
                 padding: 5px;
@@ -83,10 +95,20 @@
     .copyright {
         border-top: 1px solid grey;
         .copy {
-            float: $float-left
+            @media #{$maxExtraSmall} {
+                display: block;
+            }
+            @media #{$minSmall} {
+                float: $float-left
+            }
         }
         .design {
-            float: $float-right;
+            @media #{$maxExtraSmall} {
+                display: block;
+            }
+            @media #{$minSmall} {
+                float: $float-right
+            }
         }
     }
 }

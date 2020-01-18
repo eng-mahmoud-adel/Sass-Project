@@ -4,6 +4,10 @@
     padding: 50px 0 30px;
     margin: auto;
     q {
+        @media #{$maxExtraSmall} {
+            width: 75%;
+            font-size: 18px;
+        }
         @media #{$minSmall} {
             width: 90%;
             font-size: 22px;
@@ -45,12 +49,19 @@
     text-align: left;
     overflow: hidden;
     .service-box {
+        @media #{$maxExtraSmall} {
+            width: calc(100% / 1);
+            font-size: 18px;
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+                }
+            }
         @media #{$minSmall} {
         width: calc(100% / 1);
         font-size: 20px;
         &:not(:last-of-type) {
             margin-bottom: 30px;
-        }
+            }
         }
         @media #{$minLarge} {
             width: calc(100% / 3);
@@ -58,9 +69,6 @@
             font-size: 18px;
             float: $float-left;
             }
-
-
-        
         i {
             float: $float-left;
             color: #353535;
@@ -86,6 +94,15 @@
     padding: 40px 0;
     overflow: hidden;
     .player-box {
+        @media #{$maxExtraSmall} {
+            width: calc(100% / 1);
+            font-size: 20px;
+            text-align: left;
+            float: $float-left;
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
         @media #{$minSmall} {
             width: calc(70% / 2);
             font-size: 20px;
@@ -122,6 +139,9 @@
             }
         }
         .player-info {
+            @media #{$maxExtraSmall} {
+                width: 400px;
+            }
             @media #{$minSmall} {
                 width: 300px;
             }
@@ -155,6 +175,12 @@
     padding: 40px 0;
     overflow: hidden;
     .lorem-image {
+        @media #{$maxExtraSmall} {
+            width: calc(100% / 1);
+            &:not(:last-of-type){
+                margin-bottom: 30px;
+            }
+        }
         @media #{$minSmall} {
             width: calc(100% / 1);
             &:not(:last-of-type){
